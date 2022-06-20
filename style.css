@@ -1,0 +1,606 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+}
+.navbar{
+    text-align: center;
+    background-color: rgb(80, 20, 136);
+    padding: 1% 7%;
+}
+.nav-logo img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+}
+.nav-heading h1{
+    color: rgb(211, 247, 9);
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+}
+.nav-menu a {
+    color: rgb(243, 239, 239);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: rgb(182, 60, 212);
+    margin-top: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.nav-menu a:hover{
+    background-color: aqua;
+    color: black;
+}
+/* for desktop */
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+.navbar::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/*-----------------------Navbar End----------------------------------*/
+
+.profile{
+    position: relative;
+    padding: 100px 10px;
+    text-align: center;
+}
+.top-img{
+    width: 150px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    transition: transform 2s;
+}
+.top-img:hover{
+    transform: rotate(350deg);
+    cursor: pointer;
+}
+.bottum-img{
+    width: 150px;
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+    transition: transform 2s;
+}
+.bottum-img:hover{
+    transform: rotate(350deg);
+    cursor: pointer;
+}
+.desc{
+    position: relative;
+}
+.profile h2{
+    font-family: 'Chicle', cursive;
+    color: rgb(82, 39, 139);
+    letter-spacing: 4px;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    margin-top: 100px;
+}
+.profile p{
+    color: red;
+    margin-bottom: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 120px;
+    margin-top: -25px;
+}
+/*----------------------- Home Profile End----------------------------------*/
+.about{
+    margin-top: -1px;
+}
+.head{
+    background-image: url(image/body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: 60% 20%; 
+    height: 600px;
+    position: relative;
+}
+.ahead{
+    color: rgb(27, 255, 6);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-40% -40%);
+    font-size: 40px;
+    background-color: rgba(173, 128, 128, 0.432) ;
+    padding: 30px;
+    border-radius: 50%;
+    outline: 10px dashed red;
+    outline-offset: 10px;
+    transition: 0s;
+}
+.ahead:hover{
+    outline: none;
+    outline: 10px dotted red;
+}
+.ahead p{
+    font-family: 'Goblin One', cursive;
+    letter-spacing: 0px;
+    position: absolute;
+    top: -20px;
+    left: 45px;
+    color: rgb(6, 255, 243);
+}
+.ahead h2{
+    font-family: 'Chicle', cursive;
+    letter-spacing: 5px;
+}
+.ahead img{
+  display: none;
+}
+.bhead{
+    visibility: hidden;
+    margin-top: -20px;
+}
+/*-------------About End------------------------------------*/
+.body {
+    text-align: center;
+    padding: 1% 7%;
+}
+.body .about-me{
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 50px;
+}
+.body .border{
+    border: 5px solid red;
+    border-bottom: none;
+}
+.abody .abody-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0 8px 16px rgb(160, 119, 119);
+}
+.body-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+.body-icon ul li{
+    list-style-type: none;
+    float: left;
+    margin-left: 10px;
+}
+.body-icon ul li a{
+    background-image: url(image/icon.jpg);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid rgb(80, 20, 136);
+    border-radius: 10px;
+    background-position: -16px -18px;
+    transition: 0.5s;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.body-icon ul li:hover:nth-child(1) a{
+    background-position: -16px -102px;
+}
+.body-icon ul li:nth-child(2) a{
+    background-position: -858px -18px;
+}
+.body-icon ul li:hover:nth-child(2) a{
+    background-position: -858px -102px;
+}
+.bbody .bdesc p{
+    color: rgb(149, 6, 192);
+    font-size: 20px;
+    margin-top: -25px;
+    font-family: 'Chicle', cursive;
+}
+
+.bbody .cv{
+    background-color: red;
+    border: none;
+    padding: 10px 14px ;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.body::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*-------------About 1---------------------------------*/
+
+.information::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.information{
+    background-color: rgb(160, 167, 157);
+    padding: 1% 7%;
+
+}
+.info-title{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    padding-top: 20px;
+
+}
+.info-title .border2{
+    border: 5px solid red;
+    border-bottom: none;
+}
+.information .card{
+    background-color: rgb(181, 212, 196);
+    margin-top: 20px;
+    height: 600px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.card:hover{
+    box-shadow: 0 2px 4px 10px rgb(223, 95, 95);
+}
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    margin-top: 20px;
+    border: 5px solid rgb(83, 38, 190);
+    border-radius: 35%;
+    padding: 15px;
+}
+.card-title{
+    background-color: rgb(43, 236, 75);
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.card-title h2{
+    padding: 4px;
+    color: rgb(248, 9, 9);
+}
+
+.card-desc strong {
+    color: rgb(18, 22, 238);
+}
+.card-desc img{
+    width: 200px;
+    margin-left: 26%;
+}
+/*-------------About 2 End-----------------------------------*/
+
+.skills::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.skills{
+    background-color: rgb(15, 227, 235);
+    padding: 1% 7%;
+    box-sizing: border-box;
+}
+.skills-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 50px;
+    padding-top: 10px;
+    color: red;
+}
+.skills-title .border3{
+    border: 5px solid rgb(248, 5, 195);
+    border-bottom: none;
+}
+.skills .card-skills{
+    background-color: rgb(119, 7, 63);
+    margin-top: 20px;
+    height: 600px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.card-skills:hover{
+    box-shadow: 0 4px 8px 5px rgb(255, 238, 4);
+}
+.card-icon-skills{
+    text-align: center;
+}
+.card-icon-skills img{
+    margin-top: 20px;
+    border: 5px solid rgb(6, 226, 255);
+    border-radius: 50%;
+    padding: 10px;
+}
+.card-title-skills{
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+}
+.card-title-skills h2{
+    padding: 5px;
+    color: rgb(0, 255, 13);
+}
+.card-desc-skills strong {
+    color: rgb(18, 238, 18);
+    text-decoration: underline;
+}
+.card-desc-skills li {
+    color: rgb(235, 207, 207);
+    font-size: 15px;
+    list-style-type: circle;
+    margin-left: 30px;
+}
+.card-desc-skills b {
+    color: rgb(6, 238, 255);
+}
+
+.sills-container li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 10px;
+    margin: 30px 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: rgb(31, 255, 1);
+}
+.sills-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: white;
+    width: 92%;
+    height: 10px;
+    border-radius: 30px;
+}
+.sills-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: rgb(76, 0, 255);
+    width: 0;
+    height: 10px;
+    border-radius: 30px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.sills-container li.html::after{
+    animation-name: html;
+}
+    @keyframes html{
+        to{
+            width:72%}
+    }
+
+.sills-container li.css::after{
+    animation-name: css;
+}
+    @keyframes css {
+        to{
+            width:82%}
+    }
+/*-------------skills End-----------------------------------*/
+.contact-container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contact-container{
+    padding: 1% 7%;
+    background-image: url(image/body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: 60% 20%; 
+    height: 200vh;
+}
+.contact-heading{
+    color: red;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contact-heading .border4{
+    border: 5px solid red;
+    border-bottom: none;
+}
+.contact-left{
+    text-align: center;
+    margin-top: 20px;
+}
+.contact-box .icon{
+    background-color: rgb(35, 177, 42);
+    width: 46px;
+    height: 42px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.contact-box{
+    margin-top: 20px;
+    background-color: rgba(119, 112, 112, 0.692);
+    border-radius: 40px;
+    padding: 20px;
+}
+.contact-box .address{
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+.contact-box .address span{
+    color: rgb(0, 252, 21);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.contact-box .address a{
+    color: rgb(254, 255, 254);
+   text-decoration: none;
+}
+.contact-right {
+    text-align: center;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 60px;
+}
+.contact-right .contact-head h2 {
+    color: rgb(207, 5, 106);
+}
+.contact-right .contact-body {
+    color: rgb(76, 0, 255);
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact-right .contact-body [type="text"], [type="email"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid red;
+    font-size: 15px;
+}
+.contact-right .contact-body textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid red;
+    resize: none;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+.contact-right .contact-body input::placeholder{
+    font-size: 15px;
+}
+.contact-right .contact-body [type="reset"], [type="submit"]{
+    border: none;
+    font-size: 20px;
+    background-color: red;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    margin-top: -40px;
+    cursor: pointer;
+}
+/*-------------contact End-----------------------------------*/
+
+.footer-container{
+    background-color: rgb(58, 58, 13);
+    padding: 1% 7%;
+    height: 300px;
+}
+.footer-content{
+    background-color: rgba(148, 120, 120, 0.432);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+.footer-icon ul li{
+    list-style-type: none;
+    float: left;
+    margin-left: 10px;
+}
+.footer-icon ul li a{
+    background-image: url(image/icon.jpg);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid rgb(1, 224, 240);
+    border-radius: 10px;
+    background-position: -16px -18px;
+    transition: 0.5s;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.footer-icon ul li:hover:nth-child(1) a{
+    background-position: -16px -102px;
+}
+.footer-icon ul li:nth-child(2) a{
+    background-position: -858px -18px;
+}
+.footer-icon ul li:hover:nth-child(2) a{
+    background-position: -858px -102px;
+}
+.footer-icon ul li:nth-child(3) a{
+    background-position: -267px -18px;
+}
+.footer-icon ul li:hover:nth-child(3) a{
+    background-position: -267px -102px;
+}
+
+.footer-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+.footer-heading ul li{
+    list-style-type: none;
+    float: left;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.footer-heading ul li a{
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.footer-heading ul li:hover{
+    background-color: rgb(119, 7, 63);
+    border-radius: 20px;
+}
+.footer-bottom .footer-bottom-left h2{
+    color: white;
+    float: left;
+    font-size: 15px;
+}
+.footer-bottom .footer-bottom-left a{
+    color: white;
+    text-decoration: none;
+}
+.footer-bottom .footer-bottom-left a:hover{
+    color: rgb(255, 0, 0);
+}
+.footer-bottom .footer-bottom-right h2{
+    color: white;
+    float: right;
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+}

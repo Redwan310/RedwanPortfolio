@@ -1,0 +1,276 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.navbar{
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgb(53, 102, 53);
+}
+.nav-logo{
+    text-align: left;
+}
+.navbar img{
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+    margin-top: 0;
+}
+.nav-heading{
+    text-align: center;
+}
+.nav-heading h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalized;
+    margin-top: 4px;
+    margin-left: -200px;
+}
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.nav-menu a{
+    padding: 5px 15px;
+    background-color: #002efa;
+    margin-left: 15px;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 6px #999;
+    color: rgb(255, 255, 255);
+}
+.nav-menu a:hover{
+    background-color: #002efa;
+    color: rgb(255, 255, 255);
+}
+
+.nav-menu a:active{
+    box-shadow: 0 3px rgb(255, 0, 0);
+    transform: translatey(4px);
+}
+/*-----------------------Navbar End---------------------------------*/
+.desc{
+    margin-top: -30px;
+}
+.profile h2{
+    font-size: 5rem;
+}
+.profile h2:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 8px rgb(0, 0, 0), 4px 4px 8px rgb(0, 0, 0), 4px 4px 8px rgb(0, 0, 0), 4px 4px 8px rgb(0, 0, 0);
+    text-decoration: none;
+}
+.profile p{
+    font-size: 1.5rem;
+    margin-top: -60px;
+    margin-left: 310px;
+}
+
+/*-----------------------HOme Profile End----------------------------*/
+.head{
+    height: 520px;
+    position: relative;
+}
+.ahead{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50% -50%);
+    font-size: 50px;
+}
+.ahead img{
+    display: block;
+    position: absolute;
+    top: 62%;
+    left: 30%;
+    border-radius: 90%;
+}
+.ahead:hover{
+    outline: none;
+    outline: 10px dotted red;
+}
+.ahead p{
+    font-family: 'Goblin One', cursive;
+    letter-spacing: 0px;
+    position: absolute;
+    top: -20px;
+    left: 45px;
+    color: rgb(6, 255, 243);
+}
+.ahead h2{
+    font-family: 'Chicle', cursive;
+    letter-spacing: 5px;
+}
+.bhead{
+    visibility: visible;
+    color: rgb(148, 240, 28);
+    font-size: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 45%;
+}
+.bhead h2{
+    font-family: 'Ms Madi', cursive;
+    text-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+/*-------------About End---------------------------------------------*/
+
+.abody .abody-img{
+    margin-top: 30px;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+ 
+    transition: 0.5s;
+}
+.abody .abody-img:hover {
+    box-shadow: 2px 4px 16px rgb(182, 115, 115), 0px 8px 30px rgb(77, 72, 72);
+}
+.bbody .bdesc p{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 5px;
+    text-align: left;
+    line-height: 40px;
+}
+.bbody .cv{
+    text-align: center;
+    margin-left: -400px;
+}
+/*-------------About 1 End-----------------------------------*/
+
+.card-desc li{
+    font-size: 20px;
+}
+.card-desc img{
+    margin-left: 32%;
+}
+/*-------------About 2 End-------------------------------*/
+.skills{
+    background-color: rgb(96, 243, 133);
+}
+.skills .card-skills{
+    height: 700px;
+}
+.sills-container li{
+    font-size: 15px;
+}
+.skills-title{
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+    margin-top: -10px;
+}
+.skills-title .border3{
+    border: 5px solid rgb(255, 0, 0);
+    border-bottom: none;
+}
+.card-skills:hover{
+    box-shadow: 0 4px 8px 5px rgb(32, 4, 241);
+}
+
+/*-------------skills End-----------------------------------*/
+
+.contact-container{
+    height: 85vh;
+}
+.contact-heading{
+    color: rgb(0, 204, 255);
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: -15px;
+    text-decoration: underline;
+}
+.contact-heading .border4{
+    display: none;
+}
+.contact-left{
+    text-align: center;
+    margin-top: -15px;
+}
+.contact-box .icon{
+    background-color: rgb(35, 177, 42);
+    width: 46px;
+    height: 42px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.contact-box{
+    margin-top: 15px;
+    background-color: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+.contact-box .address{
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+.contact-box .address span{
+    color: rgb(0, 252, 21);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.contact-box .address a{
+    color: rgb(254, 255, 254);
+   text-decoration: none;
+}
+.contact-right {
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+.contact-right .contact-head h2 {
+    color: rgb(207, 5, 106);
+}
+.contact-right .contact-body {
+    color: rgb(76, 0, 255);
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact-right .contact-body [type="text"], [type="email"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid red;
+    font-size: 15px;
+}
+.contact-right .contact-body textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid red;
+    resize: none;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+.contact-right .contact-body input::placeholder{
+    font-size: 15px;
+}
+.contact-right .contact-body [type="reset"], [type="submit"]{
+    border: none;
+    font-size: 15px;
+    background-color: red;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 0px;
+}
